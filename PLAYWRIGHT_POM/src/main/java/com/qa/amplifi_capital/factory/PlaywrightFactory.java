@@ -19,28 +19,28 @@ public class PlaywrightFactory {
     Browser browser;
     BrowserContext browserContext;
     Page page;
-//    Properties prop;
+    Properties prop;
 
-    public Object[]  initBrowser(String browserName) {
+    public Object[]  initBrowser(Properties prop) {
 
-//        String browserName=prop.getProperty("browser").trim();
+        String browserName=prop.getProperty("browser").trim();
         
-//        System.out.println("Browser name is " + browserName);
-//        Boolean headBoolean=Boolean.parseBoolean(prop.getProperty("headless")) ;
+       System.out.println("Browser name is " + browserName);
+        Boolean headBoolean=Boolean.parseBoolean(prop.getProperty("headless")) ;
 
         playwright = Playwright.create();
         switch (browserName.toLowerCase()) {
             case "chromium":
-                browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximized")));
+                browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headBoolean).setArgs(List.of("--start-maximized")));
                 break;
             case "chrome":
-            browser=playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false).setArgs(List.of("--start-maximized")));
+            browser=playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(headBoolean).setArgs(List.of("--start-maximized")));
                 break;
             case "firefox":
-            browser=playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximized")));
+            browser=playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headBoolean).setArgs(List.of("--start-maximized")));
                 break;
             case "webkit":
-            browser=playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximized")));
+            browser=playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headBoolean).setArgs(List.of("--start-maximized")));
                 break;
             default:
                 System.out.println("Please pass the right browser name....");
@@ -49,33 +49,32 @@ public class PlaywrightFactory {
        browserContext= browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
        
        page=browserContext.newPage();
-//       page.navigate(prop.getProperty("url").trim());
-       page.navigate("https://uat.amplificapital.com");
+       page.navigate(prop.getProperty("url").trim());
        page.waitForTimeout(4000);
        
        return new Object[]{page, browserContext};
 
     }
     /*
-     * This method is used to initalized the properties from config ifle
+     * This method is used to initalized the properties from config file
      */
      
-//    public Properties init_prop() {
-//    	try {
-//            
-//            FileInputStream ip= new FileInputStream("./srcc/test/resources/config/config.properties");
-//            prop = new Properties();
-//            prop.load(ip);
-//        } catch (FileNotFoundException e) {
-//            
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//           
-//            e.printStackTrace();
-//        }
-//        return prop;
-//        
-//    	
-//    }
+    public Properties init_prop() {
+    	try {
+            
+            FileInputStream ip= new FileInputStream("./srcs/test/resources/config/config.properties");
+            prop = new Properties();
+            prop.load(ip);
+        } catch (FileNotFoundException e) {
+            
+            e.printStackTrace();
+        } catch (IOException e) {
+           
+            e.printStackTrace();
+        }
+        return prop;
+        
+    	
+    }
     
 }
