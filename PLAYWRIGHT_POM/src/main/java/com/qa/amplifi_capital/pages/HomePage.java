@@ -251,5 +251,48 @@ public class HomePage {
         }
         pages.get(1).close();
     }
+    
+    public AboutPage navigateToAboutPage(){
+        page.waitForTimeout(3000);
+        page.locator(aboutLink).click();
+        page.waitForTimeout(2000);
+        return new AboutPage(page,context);
+    }
+
+    public TeamPage navigateToTeamPage(){
+        page.waitForTimeout(3000);
+        page.locator(teamLink).click();
+        page.waitForTimeout(2000);
+        return new TeamPage(page,context);
+    }
+
+    public CreditUnionsPage navigateToCreditUnionsPage(){
+        page.waitForTimeout(3000);
+        page.locator(creditUnionsLink).click();
+        page.waitForTimeout(2000);
+        return new CreditUnionsPage(page,context);
+    }
+
+    public InvestorsPage navigateToInvestorsPage(){
+        page.waitForTimeout(3000);
+        page.locator(investorsLink).click();
+        page.waitForTimeout(2000);
+        return new InvestorsPage(page,context);
+    }
+
+    public ContactPage navigateToContactPage(){
+        page.waitForTimeout(3000);
+        page.locator(contactLink).click();
+        page.waitForTimeout(2000);
+        return new ContactPage(page,context);
+    }
+
+    public CareersPage navigateToCaeersPage(){
+        page.waitForTimeout(3000);
+        page.locator(careersLink).click();
+        page.waitForTimeout(2000);
+        return new CareersPage(page,context);
+    }
+    
 	
 }

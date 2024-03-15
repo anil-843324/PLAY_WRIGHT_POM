@@ -9,7 +9,7 @@
 		</classes>
 	</test>
 
-	<!-- <test name="AmplifiCapital About Page Test">
+	<test name="AmplifiCapital About Page Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.AboutPageTest" />
@@ -48,6 +48,6 @@
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.CareersPageTest" />
 		</classes>
-	</test> -->
+	</test>
 	
 </suite>
