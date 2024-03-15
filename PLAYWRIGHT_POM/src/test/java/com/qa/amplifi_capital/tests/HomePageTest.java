@@ -4,6 +4,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qa.amplifi_capital.base.BaseTest;
+import com.qa.amplifi_capital.constants.AppContant;
 
 public class HomePageTest extends BaseTest{
 	
@@ -12,6 +13,7 @@ public class HomePageTest extends BaseTest{
     public void homePageTitleTest() {
         String actualTitle = homePage.getHomePageTitle();
         Assert.assertEquals(actualTitle, "Amplifi Capital UK - Building a Financial Community");
+        // Assert.assertEquals(actualTitle, AppContant.LEARN_ABOUT_OUR_HISTORY);
     }
 
     @Test
