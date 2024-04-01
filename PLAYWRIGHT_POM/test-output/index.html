@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">48 methods, 1 failed,   47 passed</span>
+                    <span class="method-stats">48 methods, 2 failed,   46 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Amplifi_Capital_Test_Regression__Suite" class="show-methods failed suite-Amplifi_Capital_Test_Regression__Suite"> (show)</a> <!-- show-methods failed suite-Amplifi_Capital_Test_Regression__Suite -->
                     </span>
                     <div class="method-list-content failed suite-Amplifi_Capital_Test_Regression__Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Amplifi_Capital_Test_Regression__Suite" title="com.qa.amplifi_capital.tests.CreditUnionsPageTest" class="method navigator-link" hash-for-method="creditUnionsPageContentsTest">creditUnionsPageContentsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Amplifi_Capital_Test_Regression__Suite" title="com.qa.amplifi_capital.tests.HomePageTest" class="method navigator-link" hash-for-method="homePageURLTest">homePageURLTest</a> <!-- method navigator-link -->
@@ -252,11 +257,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Amplifi_Capital_Test_Regression__Suite" title="com.qa.amplifi_capital.tests.CreditUnionsPageTest" class="method navigator-link" hash-for-method="creditUnionsPageContentsTest">creditUnionsPageContentsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Amplifi_Capital_Test_Regression__Suite" title="com.qa.amplifi_capital.tests.CreditUnionsPageTest" class="method navigator-link" hash-for-method="creditUnionsPageH1TagTest">creditUnionsPageH1TagTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -365,6 +365,101 @@
           <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.qa.amplifi_capital.tests.CreditUnionsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="creditUnionsPageContentsTest">
+                  </a> <!-- creditUnionsPageContentsTest -->
+                  <span class="method-name">creditUnionsPageContentsTest</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(&quot;a[target=&apos;_blank&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
+	at com.microsoft.playwright.Page.click(Page.java:3779)
+	at com.qa.amplifi_capital.pages.CreditUnionsPage.lambda$0(CreditUnionsPage.java:95)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:116)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:491)
+	at com.microsoft.playwright.impl.PageImpl.waitForPopupImpl(PageImpl.java:459)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForPopup$4(PageImpl.java:452)
+	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:82)
+	at com.microsoft.playwright.impl.PageImpl.waitForPopup(PageImpl.java:452)
+	at com.microsoft.playwright.Page.waitForPopup(Page.java:7441)
+	at com.qa.amplifi_capital.pages.CreditUnionsPage.ValidateCreditUnionsPageContents(CreditUnionsPage.java:94)
+	at com.qa.amplifi_capital.tests.CreditUnionsPageTest.creditUnionsPageContentsTest(CreditUnionsPageTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(&quot;a[target=&apos;_blank&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 46 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-failed -->
+          <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.qa.amplifi_capital.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -374,64 +469,41 @@
                   </a> <!-- homePageURLTest -->
                   <span class="method-name">homePageURLTest</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [https://uat.amplificapital.com] but found [https://uat.amplificapital.com/]
-	at com.qa.amplifi_capital.tests.HomePageTest.homePageURLTest(HomePageTest.java:20)
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.qa.amplifi_capital.tests.HomePageTest.homePageURLTest(HomePageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-failed -->
-          <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.amplifi_capital.tests.InvestorsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageButtonsTest">
-                  </a> <!-- aboutPageButtonsTest -->
-                  <span class="method-name">aboutPageButtonsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageContentsTest">
-                  </a> <!-- aboutPageContentsTest -->
-                  <span class="method-name">aboutPageContentsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageH1TagTest">
-                  </a> <!-- aboutPageH1TagTest -->
-                  <span class="method-name">aboutPageH1TagTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageTitleTest">
-                  </a> <!-- aboutPageTitleTest -->
-                  <span class="method-name">aboutPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageURLTest">
-                  </a> <!-- aboutPageURLTest -->
-                  <span class="method-name">aboutPageURLTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="investorsPageNavigationTest">
-                  </a> <!-- investorsPageNavigationTest -->
-                  <span class="method-name">investorsPageNavigationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-passed -->
           <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -443,13 +515,6 @@
                   <a name="creditUnionsPageButtonsTest">
                   </a> <!-- creditUnionsPageButtonsTest -->
                   <span class="method-name">creditUnionsPageButtonsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="creditUnionsPageContentsTest">
-                  </a> <!-- creditUnionsPageContentsTest -->
-                  <span class="method-name">creditUnionsPageContentsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -485,56 +550,49 @@
           <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.amplifi_capital.tests.TeamPageTest</span>
+              <span class="class-name">com.qa.amplifi_capital.tests.AboutPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageButtonsTest">
-                  </a> <!-- teamPageButtonsTest -->
-                  <span class="method-name">teamPageButtonsTest</span>
+                  <a name="aboutPageButtonsTest">
+                  </a> <!-- aboutPageButtonsTest -->
+                  <span class="method-name">aboutPageButtonsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageContentsTest">
-                  </a> <!-- teamPageContentsTest -->
-                  <span class="method-name">teamPageContentsTest</span>
+                  <a name="aboutPageContentsTest">
+                  </a> <!-- aboutPageContentsTest -->
+                  <span class="method-name">aboutPageContentsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageH1TagTest">
-                  </a> <!-- teamPageH1TagTest -->
-                  <span class="method-name">teamPageH1TagTest</span>
+                  <a name="aboutPageH1TagTest">
+                  </a> <!-- aboutPageH1TagTest -->
+                  <span class="method-name">aboutPageH1TagTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageNavigationTest">
-                  </a> <!-- teamPageNavigationTest -->
-                  <span class="method-name">teamPageNavigationTest</span>
+                  <a name="aboutPageNavigationTest">
+                  </a> <!-- aboutPageNavigationTest -->
+                  <span class="method-name">aboutPageNavigationTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageTitleTest">
-                  </a> <!-- teamPageTitleTest -->
-                  <span class="method-name">teamPageTitleTest</span>
+                  <a name="aboutPageTitleTest">
+                  </a> <!-- aboutPageTitleTest -->
+                  <span class="method-name">aboutPageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="teamPageURLTest">
-                  </a> <!-- teamPageURLTest -->
-                  <span class="method-name">teamPageURLTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateCardsContents">
-                  </a> <!-- validateCardsContents -->
-                  <span class="method-name">validateCardsContents</span>
+                  <a name="aboutPageURLTest">
+                  </a> <!-- aboutPageURLTest -->
+                  <span class="method-name">aboutPageURLTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -663,6 +721,113 @@
           <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.qa.amplifi_capital.tests.InvestorsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageButtonsTest">
+                  </a> <!-- aboutPageButtonsTest -->
+                  <span class="method-name">aboutPageButtonsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageContentsTest">
+                  </a> <!-- aboutPageContentsTest -->
+                  <span class="method-name">aboutPageContentsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageH1TagTest">
+                  </a> <!-- aboutPageH1TagTest -->
+                  <span class="method-name">aboutPageH1TagTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageTitleTest">
+                  </a> <!-- aboutPageTitleTest -->
+                  <span class="method-name">aboutPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageURLTest">
+                  </a> <!-- aboutPageURLTest -->
+                  <span class="method-name">aboutPageURLTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="investorsPageNavigationTest">
+                  </a> <!-- investorsPageNavigationTest -->
+                  <span class="method-name">investorsPageNavigationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-passed -->
+          <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.amplifi_capital.tests.TeamPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageButtonsTest">
+                  </a> <!-- teamPageButtonsTest -->
+                  <span class="method-name">teamPageButtonsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageContentsTest">
+                  </a> <!-- teamPageContentsTest -->
+                  <span class="method-name">teamPageContentsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageH1TagTest">
+                  </a> <!-- teamPageH1TagTest -->
+                  <span class="method-name">teamPageH1TagTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageNavigationTest">
+                  </a> <!-- teamPageNavigationTest -->
+                  <span class="method-name">teamPageNavigationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageTitleTest">
+                  </a> <!-- teamPageTitleTest -->
+                  <span class="method-name">teamPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teamPageURLTest">
+                  </a> <!-- teamPageURLTest -->
+                  <span class="method-name">teamPageURLTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCardsContents">
+                  </a> <!-- validateCardsContents -->
+                  <span class="method-name">validateCardsContents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-passed -->
+          <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.qa.amplifi_capital.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -717,56 +882,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-passed -->
-          <div class="suite-Amplifi_Capital_Test_Regression__Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.amplifi_capital.tests.AboutPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageButtonsTest">
-                  </a> <!-- aboutPageButtonsTest -->
-                  <span class="method-name">aboutPageButtonsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageContentsTest">
-                  </a> <!-- aboutPageContentsTest -->
-                  <span class="method-name">aboutPageContentsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageH1TagTest">
-                  </a> <!-- aboutPageH1TagTest -->
-                  <span class="method-name">aboutPageH1TagTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageNavigationTest">
-                  </a> <!-- aboutPageNavigationTest -->
-                  <span class="method-name">aboutPageNavigationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageTitleTest">
-                  </a> <!-- aboutPageTitleTest -->
-                  <span class="method-name">aboutPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutPageURLTest">
-                  </a> <!-- aboutPageURLTest -->
-                  <span class="method-name">aboutPageURLTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Amplifi_Capital_Test_Regression__Suite-class-passed -->
         </div> <!-- panel Amplifi_Capital_Test_Regression__Suite -->
         <div panel-name="test-xml-Amplifi_Capital_Test_Regression__Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -776,45 +891,41 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; name=&quot;Amplifi Capital Test Regression  Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital Home Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Amplifi Capital Test Regression  Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.amplifi_capital.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital Home Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital Home Page Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital About Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital About Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.AboutPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital About Page Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital Team Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital Team Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.TeamPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital Team Page Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital  CreditUnions Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital  CreditUnions Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.CreditUnionsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital  CreditUnions Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital Investors Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital Investors Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.InvestorsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital Investors Page Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital Contact Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital Contact Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.ContactPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AmplifiCapital Contact Page Test --&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;AmplifiCapital Careers Page Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmplifiCapital Careers Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.amplifi_capital.tests.CareersPageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -878,200 +989,200 @@ data.addRows(48);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'homePageNewsCarouselTest')
 data.setCell(0, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(0, 3, 113520);
+data.setCell(0, 3, 116190);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateCardsContents')
 data.setCell(1, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(1, 3, 107462);
+data.setCell(1, 3, 108057);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'homePageFooterLinksTest')
 data.setCell(2, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(2, 3, 34227);
+data.setCell(2, 3, 37699);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'homePageButtonsTest')
-data.setCell(3, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(3, 3, 32274);
+data.setCell(3, 1, 'creditUnionsPageContentsTest')
+data.setCell(3, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
+data.setCell(3, 3, 33100);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'homePageLegalsTest')
+data.setCell(4, 1, 'homePageButtonsTest')
 data.setCell(4, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(4, 3, 21513);
+data.setCell(4, 3, 32507);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'aboutPageContentsTest')
-data.setCell(5, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(5, 3, 20821);
+data.setCell(5, 1, 'homePageLegalsTest')
+data.setCell(5, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
+data.setCell(5, 3, 22151);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'careersPageContentsTest')
-data.setCell(6, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(6, 3, 18889);
+data.setCell(6, 1, 'aboutPageContentsTest')
+data.setCell(6, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
+data.setCell(6, 3, 20368);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'careersPageButtonsTest')
 data.setCell(7, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(7, 3, 17328);
+data.setCell(7, 3, 17465);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'homePageContentsTest')
-data.setCell(8, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(8, 3, 17294);
+data.setCell(8, 1, 'careersPageContentsTest')
+data.setCell(8, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
+data.setCell(8, 3, 17274);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'creditUnionsPageContentsTest')
-data.setCell(9, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(9, 3, 16496);
+data.setCell(9, 1, 'homePageContentsTest')
+data.setCell(9, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
+data.setCell(9, 3, 16698);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'aboutPageContentsTest')
-data.setCell(10, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(10, 3, 14137);
+data.setCell(10, 1, 'aboutPageButtonsTest')
+data.setCell(10, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
+data.setCell(10, 3, 14509);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'aboutPageButtonsTest')
-data.setCell(11, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(11, 3, 14065);
+data.setCell(11, 1, 'aboutPageContentsTest')
+data.setCell(11, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
+data.setCell(11, 3, 14260);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'creditUnionsPageButtonsTest')
 data.setCell(12, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(12, 3, 14028);
+data.setCell(12, 3, 14253);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'aboutPageButtonsTest')
 data.setCell(13, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(13, 3, 13434);
+data.setCell(13, 3, 13506);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'ValidatingWithAllCorrectFields')
-data.setCell(14, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(14, 3, 11588);
+data.setCell(14, 1, 'teamPageContentsTest')
+data.setCell(14, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
+data.setCell(14, 3, 11859);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'teamPageContentsTest')
-data.setCell(15, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(15, 3, 11420);
+data.setCell(15, 1, 'ValidatingWithAllCorrectFields')
+data.setCell(15, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(15, 3, 11748);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'contactPageContentsTest')
 data.setCell(16, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(16, 3, 9451);
+data.setCell(16, 3, 10255);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'teamPageButtonsTest')
-data.setCell(17, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(17, 3, 8023);
+data.setCell(17, 1, 'ValidatingWithIncorrectEmailType')
+data.setCell(17, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(17, 3, 8225);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'ValidatingWithIncorrectEmailType')
-data.setCell(18, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(18, 3, 7977);
+data.setCell(18, 1, 'teamPageButtonsTest')
+data.setCell(18, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
+data.setCell(18, 3, 8185);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'ValidatingWithEmptyEmail')
 data.setCell(19, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(19, 3, 7902);
+data.setCell(19, 3, 8018);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'ValidatingWithEmptyName')
 data.setCell(20, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(20, 3, 7311);
+data.setCell(20, 3, 7407);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'ValidatingWithAllEmptyFields')
 data.setCell(21, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(21, 3, 7309);
+data.setCell(21, 3, 7344);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'investorsPageNavigationTest')
 data.setCell(22, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(22, 3, 5140);
+data.setCell(22, 3, 5190);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'contactPageNavigationTest')
-data.setCell(23, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(23, 3, 5136);
+data.setCell(23, 1, 'creditUnionsPageNavigationTest')
+data.setCell(23, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
+data.setCell(23, 3, 5185);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'aboutPageNavigationTest')
 data.setCell(24, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(24, 3, 5131);
+data.setCell(24, 3, 5184);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'creditUnionsPageNavigationTest')
-data.setCell(25, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(25, 3, 5119);
+data.setCell(25, 1, 'carriesPageNavigationTest')
+data.setCell(25, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
+data.setCell(25, 3, 5183);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'carriesPageNavigationTest')
-data.setCell(26, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(26, 3, 5119);
+data.setCell(26, 1, 'contactPageNavigationTest')
+data.setCell(26, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(26, 3, 5162);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'teamPageNavigationTest')
 data.setCell(27, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(27, 3, 5115);
+data.setCell(27, 3, 5161);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'aboutPageH1TagTest')
-data.setCell(28, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(28, 3, 1042);
+data.setCell(28, 1, 'teamPageH1TagTest')
+data.setCell(28, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
+data.setCell(28, 3, 1028);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'creditUnionsPageH1TagTest')
 data.setCell(29, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(29, 3, 1036);
+data.setCell(29, 3, 1024);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'teamPageH1TagTest')
-data.setCell(30, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(30, 3, 1034);
+data.setCell(30, 1, 'aboutPageH1TagTest')
+data.setCell(30, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
+data.setCell(30, 3, 1023);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'aboutPageH1TagTest')
-data.setCell(31, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(31, 3, 1033);
+data.setCell(31, 1, 'careersPageH1TagTest')
+data.setCell(31, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
+data.setCell(31, 3, 1022);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'careersPageH1TagTest')
-data.setCell(32, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(32, 3, 1023);
+data.setCell(32, 1, 'aboutPageH1TagTest')
+data.setCell(32, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
+data.setCell(32, 3, 1021);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'homePageH1TagTest')
 data.setCell(33, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(33, 3, 1017);
+data.setCell(33, 3, 1020);
 data.setCell(34, 0, 34)
 data.setCell(34, 1, 'homePageURLTest')
 data.setCell(34, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(34, 3, 7);
+data.setCell(34, 3, 17);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'teamPageTitleTest')
-data.setCell(35, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(35, 3, 6);
+data.setCell(35, 1, 'homePageTitleTest')
+data.setCell(35, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
+data.setCell(35, 3, 11);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'homePageTitleTest')
-data.setCell(36, 2, 'com.qa.amplifi_capital.tests.HomePageTest')
-data.setCell(36, 3, 5);
+data.setCell(36, 1, 'aboutPageTitleTest')
+data.setCell(36, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
+data.setCell(36, 3, 8);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'aboutPageTitleTest')
-data.setCell(37, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(37, 3, 5);
+data.setCell(37, 1, 'creditUnionsPageTitleTest')
+data.setCell(37, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
+data.setCell(37, 3, 6);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'creditUnionsPageTitleTest')
-data.setCell(38, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(38, 3, 3);
+data.setCell(38, 1, 'teamPageTitleTest')
+data.setCell(38, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
+data.setCell(38, 3, 5);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'aboutPageTitleTest')
 data.setCell(39, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(39, 3, 3);
+data.setCell(39, 3, 5);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'careersPageTitleTest')
-data.setCell(40, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(40, 3, 3);
+data.setCell(40, 1, 'contactPageTitleTest')
+data.setCell(40, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(40, 3, 5);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'teamPageURLTest')
-data.setCell(41, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
-data.setCell(41, 3, 2);
+data.setCell(41, 1, 'careersPageTitleTest')
+data.setCell(41, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
+data.setCell(41, 3, 4);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'creditUnionsPageURLTest')
-data.setCell(42, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
-data.setCell(42, 3, 2);
+data.setCell(42, 1, 'aboutPageURLTest')
+data.setCell(42, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
+data.setCell(42, 3, 3);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'contactPageTitleTest')
-data.setCell(43, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
-data.setCell(43, 3, 2);
+data.setCell(43, 1, 'creditUnionsPageURLTest')
+data.setCell(43, 2, 'com.qa.amplifi_capital.tests.CreditUnionsPageTest')
+data.setCell(43, 3, 3);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'aboutPageURLTest')
-data.setCell(44, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
-data.setCell(44, 3, 1);
+data.setCell(44, 1, 'teamPageURLTest')
+data.setCell(44, 2, 'com.qa.amplifi_capital.tests.TeamPageTest')
+data.setCell(44, 3, 2);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'contactPageURLTest')
-data.setCell(45, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(45, 1, 'aboutPageURLTest')
+data.setCell(45, 2, 'com.qa.amplifi_capital.tests.InvestorsPageTest')
 data.setCell(45, 3, 1);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'aboutPageURLTest')
-data.setCell(46, 2, 'com.qa.amplifi_capital.tests.AboutPageTest')
-data.setCell(46, 3, 0);
+data.setCell(46, 1, 'contactPageURLTest')
+data.setCell(46, 2, 'com.qa.amplifi_capital.tests.ContactPageTest')
+data.setCell(46, 3, 1);
 data.setCell(47, 0, 47)
 data.setCell(47, 1, 'careersPageURLTest')
 data.setCell(47, 2, 'com.qa.amplifi_capital.tests.CareersPageTest')
-data.setCell(47, 3, 0);
+data.setCell(47, 3, 1);
 window.suiteTableData['Amplifi_Capital_Test_Regression__Suite']= { tableData: data, tableDiv: 'times-div-Amplifi_Capital_Test_Regression__Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Amplifi_Capital_Test_Regression__Suite">
               </div> <!-- times-div-Amplifi_Capital_Test_Regression__Suite -->
             </div> <!-- times-div -->
@@ -1104,267 +1215,269 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">homePageButtonsTest</span>
-                <span class="method-start">24725 ms</span>
+                <span class="method-start">25270 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageContentsTest</span>
-                <span class="method-start">57004 ms</span>
+                <span class="method-start">58429 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageFooterLinksTest</span>
-                <span class="method-start">74300 ms</span>
+                <span class="method-start">75918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageH1TagTest</span>
-                <span class="method-start">108529 ms</span>
+                <span class="method-start">114198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageLegalsTest</span>
-                <span class="method-start">109548 ms</span>
+                <span class="method-start">115922 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageNewsCarouselTest</span>
-                <span class="method-start">131063 ms</span>
+                <span class="method-start">138670 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePageTitleTest</span>
-                <span class="method-start">244587 ms</span>
+                <span class="method-start">255533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">homePageURLTest</span>
-                <span class="method-start">244594 ms</span>
+                <span class="method-start">256208 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">244604 ms</span>
+                <span class="method-start">256236 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.AboutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">244950 ms</span>
+                <span class="method-start">257238 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">aboutPageNavigationTest</span>
-                <span class="method-start">251136 ms</span>
+                <span class="method-start">272568 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageTitleTest</span>
-                <span class="method-start">256268 ms</span>
+                <span class="method-start">278370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageURLTest</span>
-                <span class="method-start">256274 ms</span>
+                <span class="method-start">279021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageContentsTest</span>
-                <span class="method-start">256275 ms</span>
+                <span class="method-start">279634 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageButtonsTest</span>
-                <span class="method-start">277097 ms</span>
+                <span class="method-start">300565 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageH1TagTest</span>
-                <span class="method-start">291163 ms</span>
+                <span class="method-start">316170 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">292197 ms</span>
+                <span class="method-start">318274 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.TeamPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">292449 ms</span>
+                <span class="method-start">319198 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">teamPageNavigationTest</span>
-                <span class="method-start">298726 ms</span>
+                <span class="method-start">326863 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCardsContents</span>
-                <span class="method-start">303842 ms</span>
+                <span class="method-start">333072 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teamPageURLTest</span>
-                <span class="method-start">411304 ms</span>
+                <span class="method-start">441986 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teamPageContentsTest</span>
-                <span class="method-start">411307 ms</span>
+                <span class="method-start">442904 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teamPageButtonsTest</span>
-                <span class="method-start">422728 ms</span>
+                <span class="method-start">455622 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teamPageH1TagTest</span>
-                <span class="method-start">430753 ms</span>
+                <span class="method-start">464644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teamPageTitleTest</span>
-                <span class="method-start">431788 ms</span>
+                <span class="method-start">466469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">431795 ms</span>
+                <span class="method-start">467221 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.CreditUnionsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">432057 ms</span>
+                <span class="method-start">468145 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">creditUnionsPageNavigationTest</span>
-                <span class="method-start">438026 ms</span>
+                <span class="method-start">475001 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creditUnionsPageTitleTest</span>
-                <span class="method-start">443149 ms</span>
+                <span class="method-start">481024 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creditUnionsPageURLTest</span>
-                <span class="method-start">443153 ms</span>
+                <span class="method-start">481634 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">creditUnionsPageContentsTest</span>
-                <span class="method-start">443156 ms</span>
+                <span class="method-start">482251 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creditUnionsPageButtonsTest</span>
-                <span class="method-start">459654 ms</span>
+                <span class="method-start">515355 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creditUnionsPageH1TagTest</span>
-                <span class="method-start">473684 ms</span>
+                <span class="method-start">530143 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">474721 ms</span>
+                <span class="method-start">531678 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.InvestorsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">474954 ms</span>
+                <span class="method-start">532324 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">investorsPageNavigationTest</span>
-                <span class="method-start">480927 ms</span>
+                <span class="method-start">538824 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageTitleTest</span>
-                <span class="method-start">486070 ms</span>
+                <span class="method-start">544898 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageURLTest</span>
-                <span class="method-start">486075 ms</span>
+                <span class="method-start">545676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageContentsTest</span>
-                <span class="method-start">486077 ms</span>
+                <span class="method-start">546465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageButtonsTest</span>
-                <span class="method-start">500215 ms</span>
+                <span class="method-start">561346 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">aboutPageH1TagTest</span>
-                <span class="method-start">513651 ms</span>
+                <span class="method-start">575449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">514694 ms</span>
+                <span class="method-start">577079 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.ContactPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">514907 ms</span>
+                <span class="method-start">577693 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">contactPageNavigationTest</span>
-                <span class="method-start">520995 ms</span>
+                <span class="method-start">584257 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contactPageTitleTest</span>
-                <span class="method-start">526132 ms</span>
+                <span class="method-start">589819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contactPageURLTest</span>
-                <span class="method-start">526135 ms</span>
+                <span class="method-start">590192 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contactPageContentsTest</span>
-                <span class="method-start">526136 ms</span>
+                <span class="method-start">590598 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidatingWithIncorrectEmailType</span>
-                <span class="method-start">535588 ms</span>
+                <span class="method-start">601185 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidatingWithEmptyName</span>
-                <span class="method-start">543568 ms</span>
+                <span class="method-start">609654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidatingWithEmptyEmail</span>
-                <span class="method-start">550882 ms</span>
+                <span class="method-start">617321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidatingWithAllEmptyFields</span>
-                <span class="method-start">558785 ms</span>
+                <span class="method-start">625576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidatingWithAllCorrectFields</span>
-                <span class="method-start">566096 ms</span>
+                <span class="method-start">633183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">577687 ms</span>
+                <span class="method-start">645200 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.amplifi_capital.tests.CareersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">577908 ms</span>
+                <span class="method-start">645849 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">carriesPageNavigationTest</span>
-                <span class="method-start">584353 ms</span>
+                <span class="method-start">652302 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">careersPageTitleTest</span>
-                <span class="method-start">589473 ms</span>
+                <span class="method-start">658176 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">careersPageURLTest</span>
-                <span class="method-start">589478 ms</span>
+                <span class="method-start">658763 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">careersPageContentsTest</span>
-                <span class="method-start">589479 ms</span>
+                <span class="method-start">659465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">careersPageButtonsTest</span>
-                <span class="method-start">608370 ms</span>
+                <span class="method-start">677339 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">careersPageH1TagTest</span>
-                <span class="method-start">625700 ms</span>
+                <span class="method-start">695295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">626725 ms</span>
+                <span class="method-start">696798 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

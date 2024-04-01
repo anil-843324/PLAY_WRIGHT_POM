@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="48" passed="47" failed="1" skipped="0">
+<testng-results ignored="0" total="48" passed="46" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-15T09:19:56 IST" name="Amplifi Capital Test Regression  Suite" finished-at="2024-03-15T09:30:23 IST" duration-ms="627003">
+  <suite started-at="2024-03-31T20:03:43 IST" name="Amplifi Capital Test Regression  Suite" finished-at="2024-03-31T20:15:20 IST" duration-ms="697369">
     <groups>
     </groups>
-    <test started-at="2024-03-15T09:19:56 IST" name="AmplifiCapital Home Page Test" finished-at="2024-03-15T09:24:01 IST" duration-ms="244916">
+    <test started-at="2024-03-31T20:03:43 IST" name="AmplifiCapital Home Page Test" finished-at="2024-03-31T20:08:00 IST" duration-ms="256759">
       <class name="com.qa.amplifi_capital.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:19:56 IST" name="setup" finished-at="2024-03-15T09:20:21 IST" duration-ms="24678" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:03:43 IST" name="setup" finished-at="2024-03-31T20:04:08 IST" duration-ms="25221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageButtonsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:20:21 IST" name="homePageButtonsTest" finished-at="2024-03-15T09:20:53 IST" duration-ms="32274" status="PASS">
+        <test-method signature="homePageButtonsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:04:08 IST" name="homePageButtonsTest" finished-at="2024-03-31T20:04:41 IST" duration-ms="32507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageButtonsTest -->
-        <test-method signature="homePageContentsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:20:53 IST" name="homePageContentsTest" finished-at="2024-03-15T09:21:10 IST" duration-ms="17294" status="PASS">
+        <test-method signature="homePageContentsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:04:41 IST" name="homePageContentsTest" finished-at="2024-03-31T20:04:58 IST" duration-ms="16698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageContentsTest -->
-        <test-method signature="homePageFooterLinksTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:21:10 IST" name="homePageFooterLinksTest" finished-at="2024-03-15T09:21:45 IST" duration-ms="34227" status="PASS">
+        <test-method signature="homePageFooterLinksTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:04:59 IST" name="homePageFooterLinksTest" finished-at="2024-03-31T20:05:37 IST" duration-ms="37699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageFooterLinksTest -->
-        <test-method signature="homePageH1TagTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:21:45 IST" name="homePageH1TagTest" finished-at="2024-03-15T09:21:46 IST" duration-ms="1017" status="PASS">
+        <test-method signature="homePageH1TagTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:05:37 IST" name="homePageH1TagTest" finished-at="2024-03-31T20:05:38 IST" duration-ms="1020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageH1TagTest -->
-        <test-method signature="homePageLegalsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:21:46 IST" name="homePageLegalsTest" finished-at="2024-03-15T09:22:07 IST" duration-ms="21513" status="PASS">
+        <test-method signature="homePageLegalsTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:05:39 IST" name="homePageLegalsTest" finished-at="2024-03-31T20:06:01 IST" duration-ms="22151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageLegalsTest -->
-        <test-method signature="homePageNewsCarouselTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:22:07 IST" name="homePageNewsCarouselTest" finished-at="2024-03-15T09:24:01 IST" duration-ms="113520" status="PASS">
+        <test-method signature="homePageNewsCarouselTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:06:02 IST" name="homePageNewsCarouselTest" finished-at="2024-03-31T20:07:58 IST" duration-ms="116190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageNewsCarouselTest -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:24:01 IST" name="homePageTitleTest" finished-at="2024-03-15T09:24:01 IST" duration-ms="5" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:07:58 IST" name="homePageTitleTest" finished-at="2024-03-31T20:07:58 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:24:01 IST" name="homePageURLTest" finished-at="2024-03-15T09:24:01 IST" duration-ms="7" status="FAIL">
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:07:59 IST" name="homePageURLTest" finished-at="2024-03-31T20:07:59 IST" duration-ms="17" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://uat.amplificapital.com] but found [https://uat.amplificapital.com/]]]>
@@ -52,7 +52,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.qa.amplifi_capital.tests.HomePageTest.homePageURLTest(HomePageTest.java:20)
+at com.qa.amplifi_capital.tests.HomePageTest.homePageURLTest(HomePageTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,257 +69,349 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageURLTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@1151e434]" started-at="2024-03-15T09:24:01 IST" name="tearDown" finished-at="2024-03-15T09:24:01 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.HomePageTest@2c07545f]" started-at="2024-03-31T20:07:59 IST" name="tearDown" finished-at="2024-03-31T20:08:00 IST" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.HomePageTest -->
     </test> <!-- AmplifiCapital Home Page Test -->
-    <test started-at="2024-03-15T09:24:01 IST" name="AmplifiCapital About Page Test" finished-at="2024-03-15T09:24:49 IST" duration-ms="47479">
+    <test started-at="2024-03-31T20:08:00 IST" name="AmplifiCapital About Page Test" finished-at="2024-03-31T20:09:02 IST" duration-ms="61775">
       <class name="com.qa.amplifi_capital.tests.AboutPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:01 IST" name="setup" finished-at="2024-03-15T09:24:07 IST" duration-ms="6182" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:00 IST" name="setup" finished-at="2024-03-31T20:08:15 IST" duration-ms="15325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="aboutPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:07 IST" name="aboutPageNavigationTest" finished-at="2024-03-15T09:24:12 IST" duration-ms="5131" status="PASS">
+        <test-method signature="aboutPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:16 IST" name="aboutPageNavigationTest" finished-at="2024-03-31T20:08:21 IST" duration-ms="5184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageNavigationTest -->
-        <test-method signature="aboutPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:12 IST" name="aboutPageTitleTest" finished-at="2024-03-15T09:24:12 IST" duration-ms="5" status="PASS">
+        <test-method signature="aboutPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:21 IST" name="aboutPageTitleTest" finished-at="2024-03-31T20:08:21 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageTitleTest -->
-        <test-method signature="aboutPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:12 IST" name="aboutPageURLTest" finished-at="2024-03-15T09:24:12 IST" duration-ms="0" status="PASS">
+        <test-method signature="aboutPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:22 IST" name="aboutPageURLTest" finished-at="2024-03-31T20:08:22 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageURLTest -->
-        <test-method signature="aboutPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:12 IST" name="aboutPageContentsTest" finished-at="2024-03-15T09:24:33 IST" duration-ms="20821" status="PASS">
+        <test-method signature="aboutPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:23 IST" name="aboutPageContentsTest" finished-at="2024-03-31T20:08:43 IST" duration-ms="20368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageContentsTest -->
-        <test-method signature="aboutPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:33 IST" name="aboutPageButtonsTest" finished-at="2024-03-15T09:24:47 IST" duration-ms="14065" status="PASS">
+        <test-method signature="aboutPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:44 IST" name="aboutPageButtonsTest" finished-at="2024-03-31T20:08:58 IST" duration-ms="14509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageButtonsTest -->
-        <test-method signature="aboutPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:47 IST" name="aboutPageH1TagTest" finished-at="2024-03-15T09:24:48 IST" duration-ms="1033" status="PASS">
+        <test-method signature="aboutPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:08:59 IST" name="aboutPageH1TagTest" finished-at="2024-03-31T20:09:00 IST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageH1TagTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.AboutPageTest@2892d68]" started-at="2024-03-15T09:24:48 IST" name="tearDown" finished-at="2024-03-15T09:24:49 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.AboutPageTest@29a0cdb]" started-at="2024-03-31T20:09:01 IST" name="tearDown" finished-at="2024-03-31T20:09:02 IST" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.AboutPageTest -->
     </test> <!-- AmplifiCapital About Page Test -->
-    <test started-at="2024-03-15T09:24:49 IST" name="AmplifiCapital Team Page Test" finished-at="2024-03-15T09:27:08 IST" duration-ms="139603">
+    <test started-at="2024-03-31T20:09:02 IST" name="AmplifiCapital Team Page Test" finished-at="2024-03-31T20:11:31 IST" duration-ms="148765">
       <class name="com.qa.amplifi_capital.tests.TeamPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:24:49 IST" name="setup" finished-at="2024-03-15T09:24:55 IST" duration-ms="6276" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:09:02 IST" name="setup" finished-at="2024-03-31T20:09:10 IST" duration-ms="7663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="teamPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:24:55 IST" name="teamPageNavigationTest" finished-at="2024-03-15T09:25:00 IST" duration-ms="5115" status="PASS">
+        <test-method signature="teamPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:09:10 IST" name="teamPageNavigationTest" finished-at="2024-03-31T20:09:15 IST" duration-ms="5161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageNavigationTest -->
-        <test-method signature="validateCardsContents()[pri:2, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:25:00 IST" name="validateCardsContents" finished-at="2024-03-15T09:26:47 IST" duration-ms="107462" status="PASS">
+        <test-method signature="validateCardsContents()[pri:2, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:09:16 IST" name="validateCardsContents" finished-at="2024-03-31T20:11:04 IST" duration-ms="108057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCardsContents -->
-        <test-method signature="teamPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:26:47 IST" name="teamPageURLTest" finished-at="2024-03-15T09:26:47 IST" duration-ms="2" status="PASS">
+        <test-method signature="teamPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:05 IST" name="teamPageURLTest" finished-at="2024-03-31T20:11:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageURLTest -->
-        <test-method signature="teamPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:26:47 IST" name="teamPageContentsTest" finished-at="2024-03-15T09:26:59 IST" duration-ms="11420" status="PASS">
+        <test-method signature="teamPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:06 IST" name="teamPageContentsTest" finished-at="2024-03-31T20:11:18 IST" duration-ms="11859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageContentsTest -->
-        <test-method signature="teamPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:26:59 IST" name="teamPageButtonsTest" finished-at="2024-03-15T09:27:07 IST" duration-ms="8023" status="PASS">
+        <test-method signature="teamPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:19 IST" name="teamPageButtonsTest" finished-at="2024-03-31T20:11:27 IST" duration-ms="8185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageButtonsTest -->
-        <test-method signature="teamPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:27:07 IST" name="teamPageH1TagTest" finished-at="2024-03-15T09:27:08 IST" duration-ms="1034" status="PASS">
+        <test-method signature="teamPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:28 IST" name="teamPageH1TagTest" finished-at="2024-03-31T20:11:29 IST" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageH1TagTest -->
-        <test-method signature="teamPageTitleTest()[pri:7, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:27:08 IST" name="teamPageTitleTest" finished-at="2024-03-15T09:27:08 IST" duration-ms="6" status="PASS">
+        <test-method signature="teamPageTitleTest()[pri:7, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:29 IST" name="teamPageTitleTest" finished-at="2024-03-31T20:11:29 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teamPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.TeamPageTest@f0c8a99]" started-at="2024-03-15T09:27:08 IST" name="tearDown" finished-at="2024-03-15T09:27:08 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.TeamPageTest@7e6ef134]" started-at="2024-03-31T20:11:30 IST" name="tearDown" finished-at="2024-03-31T20:11:31 IST" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.TeamPageTest -->
     </test> <!-- AmplifiCapital Team Page Test -->
-    <test started-at="2024-03-15T09:27:08 IST" name="AmplifiCapital  CreditUnions Test" finished-at="2024-03-15T09:27:51 IST" duration-ms="42888">
+    <test started-at="2024-03-31T20:11:31 IST" name="AmplifiCapital  CreditUnions Test" finished-at="2024-03-31T20:12:35 IST" duration-ms="64057">
       <class name="com.qa.amplifi_capital.tests.CreditUnionsPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:08 IST" name="setup" finished-at="2024-03-15T09:27:14 IST" duration-ms="5967" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:11:31 IST" name="setup" finished-at="2024-03-31T20:11:38 IST" duration-ms="6855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="creditUnionsPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:14 IST" name="creditUnionsPageNavigationTest" finished-at="2024-03-15T09:27:19 IST" duration-ms="5119" status="PASS">
+        <test-method signature="creditUnionsPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:11:38 IST" name="creditUnionsPageNavigationTest" finished-at="2024-03-31T20:11:43 IST" duration-ms="5185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageNavigationTest -->
-        <test-method signature="creditUnionsPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:19 IST" name="creditUnionsPageTitleTest" finished-at="2024-03-15T09:27:19 IST" duration-ms="3" status="PASS">
+        <test-method signature="creditUnionsPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:11:44 IST" name="creditUnionsPageTitleTest" finished-at="2024-03-31T20:11:44 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageTitleTest -->
-        <test-method signature="creditUnionsPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:19 IST" name="creditUnionsPageURLTest" finished-at="2024-03-15T09:27:19 IST" duration-ms="2" status="PASS">
+        <test-method signature="creditUnionsPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:11:45 IST" name="creditUnionsPageURLTest" finished-at="2024-03-31T20:11:45 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageURLTest -->
-        <test-method signature="creditUnionsPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:19 IST" name="creditUnionsPageContentsTest" finished-at="2024-03-15T09:27:36 IST" duration-ms="16496" status="PASS">
+        <test-method signature="creditUnionsPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:11:45 IST" name="creditUnionsPageContentsTest" finished-at="2024-03-31T20:12:18 IST" duration-ms="33100" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator("a[target='_blank']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator("a[target='_blank']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
+at com.microsoft.playwright.Page.click(Page.java:3779)
+at com.qa.amplifi_capital.pages.CreditUnionsPage.lambda$0(CreditUnionsPage.java:95)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:116)
+at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:491)
+at com.microsoft.playwright.impl.PageImpl.waitForPopupImpl(PageImpl.java:459)
+at com.microsoft.playwright.impl.PageImpl.lambda$waitForPopup$4(PageImpl.java:452)
+at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:82)
+at com.microsoft.playwright.impl.PageImpl.waitForPopup(PageImpl.java:452)
+at com.microsoft.playwright.Page.waitForPopup(Page.java:7441)
+at com.qa.amplifi_capital.pages.CreditUnionsPage.ValidateCreditUnionsPageContents(CreditUnionsPage.java:94)
+at com.qa.amplifi_capital.tests.CreditUnionsPageTest.creditUnionsPageContentsTest(CreditUnionsPageTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\ANILKU~1\AppData\Local\Temp\playwright-java-5984751561493658190\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator("a[target='_blank']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 46 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageContentsTest -->
-        <test-method signature="creditUnionsPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:36 IST" name="creditUnionsPageButtonsTest" finished-at="2024-03-15T09:27:50 IST" duration-ms="14028" status="PASS">
+        <test-method signature="creditUnionsPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:12:18 IST" name="creditUnionsPageButtonsTest" finished-at="2024-03-31T20:12:33 IST" duration-ms="14253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageButtonsTest -->
-        <test-method signature="creditUnionsPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:50 IST" name="creditUnionsPageH1TagTest" finished-at="2024-03-15T09:27:51 IST" duration-ms="1036" status="PASS">
+        <test-method signature="creditUnionsPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:12:33 IST" name="creditUnionsPageH1TagTest" finished-at="2024-03-31T20:12:34 IST" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditUnionsPageH1TagTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@6892b3b6]" started-at="2024-03-15T09:27:51 IST" name="tearDown" finished-at="2024-03-15T09:27:51 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.CreditUnionsPageTest@8ad6665]" started-at="2024-03-31T20:12:35 IST" name="tearDown" finished-at="2024-03-31T20:12:35 IST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.CreditUnionsPageTest -->
     </test> <!-- AmplifiCapital  CreditUnions Test -->
-    <test started-at="2024-03-15T09:27:51 IST" name="AmplifiCapital Investors Page Test" finished-at="2024-03-15T09:28:31 IST" duration-ms="39944">
+    <test started-at="2024-03-31T20:12:35 IST" name="AmplifiCapital Investors Page Test" finished-at="2024-03-31T20:13:21 IST" duration-ms="45250">
       <class name="com.qa.amplifi_capital.tests.InvestorsPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:27:51 IST" name="setup" finished-at="2024-03-15T09:27:57 IST" duration-ms="5973" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:12:35 IST" name="setup" finished-at="2024-03-31T20:12:42 IST" duration-ms="6499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="investorsPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:27:57 IST" name="investorsPageNavigationTest" finished-at="2024-03-15T09:28:02 IST" duration-ms="5140" status="PASS">
+        <test-method signature="investorsPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:12:42 IST" name="investorsPageNavigationTest" finished-at="2024-03-31T20:12:47 IST" duration-ms="5190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- investorsPageNavigationTest -->
-        <test-method signature="aboutPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:02 IST" name="aboutPageTitleTest" finished-at="2024-03-15T09:28:02 IST" duration-ms="3" status="PASS">
+        <test-method signature="aboutPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:12:48 IST" name="aboutPageTitleTest" finished-at="2024-03-31T20:12:48 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageTitleTest -->
-        <test-method signature="aboutPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:02 IST" name="aboutPageURLTest" finished-at="2024-03-15T09:28:02 IST" duration-ms="1" status="PASS">
+        <test-method signature="aboutPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:12:49 IST" name="aboutPageURLTest" finished-at="2024-03-31T20:12:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageURLTest -->
-        <test-method signature="aboutPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:02 IST" name="aboutPageContentsTest" finished-at="2024-03-15T09:28:16 IST" duration-ms="14137" status="PASS">
+        <test-method signature="aboutPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:12:49 IST" name="aboutPageContentsTest" finished-at="2024-03-31T20:13:04 IST" duration-ms="14260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageContentsTest -->
-        <test-method signature="aboutPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:16 IST" name="aboutPageButtonsTest" finished-at="2024-03-15T09:28:30 IST" duration-ms="13434" status="PASS">
+        <test-method signature="aboutPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:13:04 IST" name="aboutPageButtonsTest" finished-at="2024-03-31T20:13:18 IST" duration-ms="13506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageButtonsTest -->
-        <test-method signature="aboutPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:30 IST" name="aboutPageH1TagTest" finished-at="2024-03-15T09:28:31 IST" duration-ms="1042" status="PASS">
+        <test-method signature="aboutPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:13:18 IST" name="aboutPageH1TagTest" finished-at="2024-03-31T20:13:19 IST" duration-ms="1021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageH1TagTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@1530c739]" started-at="2024-03-15T09:28:31 IST" name="tearDown" finished-at="2024-03-15T09:28:31 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.InvestorsPageTest@42039326]" started-at="2024-03-31T20:13:20 IST" name="tearDown" finished-at="2024-03-31T20:13:21 IST" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.InvestorsPageTest -->
     </test> <!-- AmplifiCapital Investors Page Test -->
-    <test started-at="2024-03-15T09:28:31 IST" name="AmplifiCapital Contact Page Test" finished-at="2024-03-15T09:29:34 IST" duration-ms="62993">
+    <test started-at="2024-03-31T20:13:21 IST" name="AmplifiCapital Contact Page Test" finished-at="2024-03-31T20:14:29 IST" duration-ms="68049">
       <class name="com.qa.amplifi_capital.tests.ContactPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:31 IST" name="setup" finished-at="2024-03-15T09:28:37 IST" duration-ms="6087" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:21 IST" name="setup" finished-at="2024-03-31T20:13:27 IST" duration-ms="6563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="contactPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:37 IST" name="contactPageNavigationTest" finished-at="2024-03-15T09:28:42 IST" duration-ms="5136" status="PASS">
+        <test-method signature="contactPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:27 IST" name="contactPageNavigationTest" finished-at="2024-03-31T20:13:32 IST" duration-ms="5162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactPageNavigationTest -->
-        <test-method signature="contactPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:42 IST" name="contactPageTitleTest" finished-at="2024-03-15T09:28:42 IST" duration-ms="2" status="PASS">
+        <test-method signature="contactPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:33 IST" name="contactPageTitleTest" finished-at="2024-03-31T20:13:33 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactPageTitleTest -->
-        <test-method signature="contactPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:42 IST" name="contactPageURLTest" finished-at="2024-03-15T09:28:42 IST" duration-ms="1" status="PASS">
+        <test-method signature="contactPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:33 IST" name="contactPageURLTest" finished-at="2024-03-31T20:13:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactPageURLTest -->
-        <test-method signature="contactPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:42 IST" name="contactPageContentsTest" finished-at="2024-03-15T09:28:52 IST" duration-ms="9451" status="PASS">
+        <test-method signature="contactPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:34 IST" name="contactPageContentsTest" finished-at="2024-03-31T20:13:44 IST" duration-ms="10255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactPageContentsTest -->
-        <test-method signature="ValidatingWithIncorrectEmailType()[pri:5, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:28:52 IST" name="ValidatingWithIncorrectEmailType" finished-at="2024-03-15T09:29:00 IST" duration-ms="7977" status="PASS">
+        <test-method signature="ValidatingWithIncorrectEmailType()[pri:5, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:44 IST" name="ValidatingWithIncorrectEmailType" finished-at="2024-03-31T20:13:52 IST" duration-ms="8225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingWithIncorrectEmailType -->
-        <test-method signature="ValidatingWithEmptyName()[pri:6, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:29:00 IST" name="ValidatingWithEmptyName" finished-at="2024-03-15T09:29:07 IST" duration-ms="7311" status="PASS">
+        <test-method signature="ValidatingWithEmptyName()[pri:6, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:13:53 IST" name="ValidatingWithEmptyName" finished-at="2024-03-31T20:14:00 IST" duration-ms="7407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingWithEmptyName -->
-        <test-method signature="ValidatingWithEmptyEmail()[pri:7, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:29:07 IST" name="ValidatingWithEmptyEmail" finished-at="2024-03-15T09:29:15 IST" duration-ms="7902" status="PASS">
+        <test-method signature="ValidatingWithEmptyEmail()[pri:7, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:14:00 IST" name="ValidatingWithEmptyEmail" finished-at="2024-03-31T20:14:08 IST" duration-ms="8018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingWithEmptyEmail -->
-        <test-method signature="ValidatingWithAllEmptyFields()[pri:8, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:29:15 IST" name="ValidatingWithAllEmptyFields" finished-at="2024-03-15T09:29:22 IST" duration-ms="7309" status="PASS">
+        <test-method signature="ValidatingWithAllEmptyFields()[pri:8, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:14:09 IST" name="ValidatingWithAllEmptyFields" finished-at="2024-03-31T20:14:16 IST" duration-ms="7344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingWithAllEmptyFields -->
-        <test-method signature="ValidatingWithAllCorrectFields()[pri:9, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:29:22 IST" name="ValidatingWithAllCorrectFields" finished-at="2024-03-15T09:29:34 IST" duration-ms="11588" status="PASS">
+        <test-method signature="ValidatingWithAllCorrectFields()[pri:9, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:14:16 IST" name="ValidatingWithAllCorrectFields" finished-at="2024-03-31T20:14:28 IST" duration-ms="11748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingWithAllCorrectFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.ContactPageTest@25ce9dc4]" started-at="2024-03-15T09:29:34 IST" name="tearDown" finished-at="2024-03-15T09:29:34 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.ContactPageTest@7dda48d9]" started-at="2024-03-31T20:14:28 IST" name="tearDown" finished-at="2024-03-31T20:14:29 IST" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.amplifi_capital.tests.ContactPageTest -->
     </test> <!-- AmplifiCapital Contact Page Test -->
-    <test started-at="2024-03-15T09:29:34 IST" name="AmplifiCapital Careers Page Test" finished-at="2024-03-15T09:30:23 IST" duration-ms="49083">
+    <test started-at="2024-03-31T20:14:29 IST" name="AmplifiCapital Careers Page Test" finished-at="2024-03-31T20:15:20 IST" duration-ms="51502">
       <class name="com.qa.amplifi_capital.tests.CareersPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:29:34 IST" name="setup" finished-at="2024-03-15T09:29:40 IST" duration-ms="6444" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:14:29 IST" name="setup" finished-at="2024-03-31T20:14:35 IST" duration-ms="6452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="carriesPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:29:40 IST" name="carriesPageNavigationTest" finished-at="2024-03-15T09:29:46 IST" duration-ms="5119" status="PASS">
+        <test-method signature="carriesPageNavigationTest()[pri:1, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:14:35 IST" name="carriesPageNavigationTest" finished-at="2024-03-31T20:14:40 IST" duration-ms="5183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carriesPageNavigationTest -->
-        <test-method signature="careersPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:29:46 IST" name="careersPageTitleTest" finished-at="2024-03-15T09:29:46 IST" duration-ms="3" status="PASS">
+        <test-method signature="careersPageTitleTest()[pri:2, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:14:41 IST" name="careersPageTitleTest" finished-at="2024-03-31T20:14:41 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careersPageTitleTest -->
-        <test-method signature="careersPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:29:46 IST" name="careersPageURLTest" finished-at="2024-03-15T09:29:46 IST" duration-ms="0" status="PASS">
+        <test-method signature="careersPageURLTest()[pri:3, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:14:42 IST" name="careersPageURLTest" finished-at="2024-03-31T20:14:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careersPageURLTest -->
-        <test-method signature="careersPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:29:46 IST" name="careersPageContentsTest" finished-at="2024-03-15T09:30:04 IST" duration-ms="18889" status="PASS">
+        <test-method signature="careersPageContentsTest()[pri:4, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:14:42 IST" name="careersPageContentsTest" finished-at="2024-03-31T20:15:00 IST" duration-ms="17274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careersPageContentsTest -->
-        <test-method signature="careersPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:30:04 IST" name="careersPageButtonsTest" finished-at="2024-03-15T09:30:22 IST" duration-ms="17328" status="PASS">
+        <test-method signature="careersPageButtonsTest()[pri:5, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:15:00 IST" name="careersPageButtonsTest" finished-at="2024-03-31T20:15:18 IST" duration-ms="17465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careersPageButtonsTest -->
-        <test-method signature="careersPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:30:22 IST" name="careersPageH1TagTest" finished-at="2024-03-15T09:30:23 IST" duration-ms="1023" status="PASS">
+        <test-method signature="careersPageH1TagTest()[pri:6, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:15:18 IST" name="careersPageH1TagTest" finished-at="2024-03-31T20:15:19 IST" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careersPageH1TagTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.CareersPageTest@543295b0]" started-at="2024-03-15T09:30:23 IST" name="tearDown" finished-at="2024-03-15T09:30:23 IST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.amplifi_capital.tests.CareersPageTest@6c0d9d86]" started-at="2024-03-31T20:15:20 IST" name="tearDown" finished-at="2024-03-31T20:15:20 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

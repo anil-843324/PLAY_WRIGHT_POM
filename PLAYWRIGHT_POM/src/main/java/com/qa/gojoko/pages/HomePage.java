@@ -1,13 +1,38 @@
 package com.qa.gojoko.pages;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.List;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.assertions.LocatorAssertions;
+import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.LoadState;
+
+import org.apache.poi.EncryptedDocumentException;
+// data loaind import file
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class HomePage {
 
@@ -53,45 +78,41 @@ public class HomePage {
 
     // Validating CSS with Figma
     public void getTextCss() {
-        String allSecondTitlePath="h2";
+        String allSecondTitlePath = "h2";
         int count_Second_title = page.locator(allSecondTitlePath).count();
 
         Locator titleLocator = page.locator(allSecondTitlePath);
 
         // Object[] cssObjects = getCssStyles(firstTitlePath,"JosefinSans");
-        
-        for(int i=0;i<count_Second_title;i++){
-            if(i!=5){
-                Object[] cssObjects2 = getCssStyles(titleLocator.nth(i),"JosefinSans");
-               
-                
+
+        for (int i = 0; i < count_Second_title; i++) {
+            if (i != 5) {
+                Object[] cssObjects2 = getCssStyles(titleLocator.nth(i), "JosefinSans");
+
             }
-            
+
         }
     }
-    public void getTitleCss(){
-        String allSecondTitlePath="h2";
+
+    public void getTitleCss() {
+        String allSecondTitlePath = "h2";
         Locator titleLocator = page.locator(allSecondTitlePath);
-       
-        Object[] cssObjects2 = getCssStyles(titleLocator.nth(0),"JosefinSans");
-         
-       
-    }
 
-
-    public void getTitleContent(){
+        Object[] cssObjects2 = getCssStyles(titleLocator.nth(0), "JosefinSans");
 
     }
 
-    public void getPragrpahCss(){
+    public void getTitleContent() {
 
     }
 
-
-    public void getPragrpahContent(){
+    public void getPragrpahCss() {
 
     }
 
+    public void getPragrpahContent() {
+
+    }
 
     // Validate buttons
     public List<String> ValidateButtons() {
@@ -255,19 +276,19 @@ public class HomePage {
         return "#" + hexR.toUpperCase() + hexG.toUpperCase() + hexB.toUpperCase();
     }
 
-    public  Boolean extractFirstFont(String fontString,String actlFontFamily) {
+    public Boolean extractFirstFont(String fontString, String actlFontFamily) {
         // Split the font string by commas and trim whitespace from each font name
         String[] fontNames = fontString.split(",");
         char[] charActl = actlFontFamily.toCharArray();
-       
+
         if (fontNames.length > 0) {
             // Remove underscores from the first font name only
             String firstFont = fontNames[0].trim().replace("_", "");
             char[] charFont = firstFont.toCharArray();
-            for(int i=0;i<charActl.length;i++){
-              if(charActl[i]!=charFont[i]){
-                  return false;
-              }
+            for (int i = 0; i < charActl.length; i++) {
+                if (charActl[i] != charFont[i]) {
+                    return false;
+                }
             }
             // return firstFont;
             return true;
@@ -275,25 +296,186 @@ public class HomePage {
             return false; // Return null if the input string is empty
         }
     }
-    
-    public Object[] getCssStyles(Locator titleLocator,String actlFontFamily) {
-        
+
+    public Object[] getCssStyles(Locator titleLocator, String actlFontFamily) {
+
         titleLocator.scrollIntoViewIfNeeded();
         String fontSize = (String) titleLocator.evaluate("element => window.getComputedStyle(element).fontSize");
-        // String colors = (String) titleLocator.evaluate("element => window.getComputedStyle(element).color");
+        // String colors = (String) titleLocator.evaluate("element =>
+        // window.getComputedStyle(element).color");
         String fontFamilys = (String) titleLocator.evaluate("element => window.getComputedStyle(element).fontFamily");
         String fontWeight = (String) titleLocator.evaluate("element => window.getComputedStyle(element).fontWeight");
         // String color=convertRGBtoHex(colors);
 
-        Boolean fontFamily=extractFirstFont(fontFamilys,actlFontFamily);
+        Boolean fontFamily = extractFirstFont(fontFamilys, actlFontFamily);
 
         // System.out.println("Font size: " + fontSize);
         // System.out.println("Color: " + colors);
         // System.out.println("Color: " + convertRGBtoHex(color));
         // System.out.println("Font family: " + extractFirstFont(fontFamilys,"Kanit"));
         // System.out.println("Font weight: " + fontWeight);
-        return new Object[] { fontSize,fontWeight,fontFamily};
+        return new Object[] { fontSize, fontWeight, fontFamily };
     }
 
+    // validing loans
 
+    private String cookieButton = "//button[contains(text(),'Accept')]";
+    private String loansButton = "//button[contains(text(),'Loans')]";
+    private String getMyPersonalisedButton = "//button[contains(text(),'Get my personalised quote')]";
+    private String editButton = "//div[contains(text(),'Edit')]";
+    private String monthsSelect = "(//div[contains(@class,\"mx-1\")])[2]//select";
+    private String carPurchageLabel = "//label[contains(text(),'Car Purchase')]";
+    private String homeImprovementsLabel = "//label[contains(text(),'Home Improvements')]";
+    private String DetConsolidationLabel = "//label[contains(text(),'Debt Consolidation')]";
+    private String LivingExpensesLabel = "//label[contains(text(),' Living Expenses ')]";
+    private String holidayLabel = "//label[contains(text(),'Holiday')]";
+    private String mrLabel = "(//label[contains(text(),'Mr')])[1]";
+    private String mrsLabel = "//label[contains(text(),'Mrs')]";
+    private String msLabel = "//label[contains(text(),'Ms')]";
+    private String missLabel = "//label[contains(text(),'Miss')]";
+    private String firstNameInput = "input#firstName";
+    private String secondNameInput = "input#lastName";
+    private String dayInput = "//input[@placeholder='DD']";
+    private String monthInput = "//input[@placeholder='MM']";
+    private String yearInput = "//input[@placeholder='YYYY']";
+    private String emailInput = "input#email";
+    private String mobileNumberInput = "input#phone";
+    private String postcodeInput = "input#postcode";
+    private String findMyAddressButton = "//button[contains(text(),'Find my address')]";
+    private String selectAddress = "//select[@formcontrolname=\"addressFormat\"]";
+    private String lessThan3YearsAgaoButton = "//label[contains(text(),'Less than 3 years ago')]";
+    private String MoreThan3YearsAgoButton = "//label[contains(text(),'More than 3 years ago')]";
+    private String incomeInput = "input#income";
+    private String financiallyDependentOnYou0Label = "//label[contains(text(),'0')]";
+    private String financiallyDependentOnYou1Label = "//label[contains(text(),'1')]";
+    private String financiallyDependentOnYou2Label = "//label[contains(text(),'2')]";
+    private String financiallyDependentOnYou3PlushLabel = "//label[contains(text(),'3')]";
+    private String selectLivingSituation = "//div[contains(@class,'col-span-12 dropdown')]//select";
+    private String mortageInput = "input#mortage";
+    private String employmentStatusSelect = "//div[contains(@class,'md:col-span-9')]//select";
+    private String jobTitleInput = "//div[contains(@class,'ng-input')]//input";
+    private String yourEmployerNameInput = "input[aria-label=\"EmployerName\"]";
+    private String quoteText = "(//lightning-layout-item[contains(@class,'bordered')])[2]";
+    private String unfortunately = "//h1";
+    private String checkYourEligibilityButton = "//button[contains(text(),'Check your eligibility')]";
+    private String aroText = "//span[contains(text(),'We need to ask you some questions so that')]";
+
+    // Validaing Loans Api calling or not
+
+    public String validatingLoansAPICallingOrnot(Integer currentlyIncome, Integer mortage, String employmentStatus,
+            String aro ,String vQuote, String rjQuote,String aroRjQuote) {
+        
+        page.locator(cookieButton).click();
+        page.locator(loansButton).click();
+        page.locator(getMyPersonalisedButton).click();
+
+        if (employmentStatus.equals("em")) {
+            page.locator(editButton).click();
+            page.locator(monthsSelect).selectOption("12");
+        }
+        page.locator(carPurchageLabel).click();
+        page.locator(missLabel).click();
+        page.locator(firstNameInput).fill("KULJIT");
+        page.locator(secondNameInput).fill("WINTERBOURNE");
+        page.locator(dayInput).fill("28");
+        page.locator(monthInput).fill("01");
+        page.locator(yearInput).fill("1995");
+        page.locator(emailInput).fill("anil9898757@yopmail.com");
+        page.locator(mobileNumberInput).fill("07507665989");
+        page.locator(postcodeInput).fill("NW4 3AB");
+        page.locator(findMyAddressButton).click();
+        page.locator(findMyAddressButton).click();
+        page.locator(selectAddress).selectOption("1 Central Mansions  Watford Way  London NW4 3AB");
+        page.locator(MoreThan3YearsAgoButton).click();
+        page.locator(incomeInput).fill(Integer.toString(currentlyIncome));
+        page.locator(financiallyDependentOnYou0Label).click();
+        page.locator(selectLivingSituation).selectOption("OWNER_WITH_MORTGAGE");
+        page.locator(mortageInput).fill(Integer.toString(mortage));
+        page.locator(employmentStatusSelect).selectOption(employmentStatus);
+        if (employmentStatus.equals("em")) {
+            page.locator(jobTitleInput).fill("Account Director");
+            page.keyboard().press("Enter");
+            page.locator(yourEmployerNameInput).fill("Gojoko");
+        }
+        page.locator(getMyPersonalisedButton).click();
+
+        try {
+            String quoteTextVisible = page.locator(quoteText).textContent();
+            String offerURL = "";
+            if (quoteTextVisible.equals("Your loan quote")) {
+                offerURL = page.url();
+                System.out.println("Offer URL: " + offerURL);
+                offerURL = getBaseUrl(offerURL);
+            }
+
+            if(rjQuote.equals("rjQuote")){
+                  
+                Page tabs = page.waitForPopup(() -> {
+                    page.click("a[target='_blank']"); 
+                });
+                tabs.navigate("https://uat.mycommunityfinance.co.uk/");
+                List<Page> pages = tabs.context().pages();
+                
+                pages.get(0).close();
+                return offerURL;
+                   
+            }else if(aroRjQuote.equals("aroRjQuote")){
+                   
+                Page tabs = page.waitForPopup(() -> {
+                    page.click("a[target='_blank']"); 
+                });
+                tabs.navigate("https://uat.mycommunityfinance.co.uk/");
+                List<Page> pages = tabs.context().pages();
+                pages.get(0).close();
+                return offerURL;
+            }
+
+            return offerURL;
+
+        } catch (Exception e) {
+
+            if (aro.equals("aro")) {
+                // redirecting ot aro website
+                page.locator(checkYourEligibilityButton).click();
+                page.waitForTimeout(25000);
+                // String gettingAroTexts = page.locator(aroText).textContent();
+                String aroUrl = "";
+                // if (gettingAroTexts.equals(
+                // "Your Loan")) {
+                aroUrl = page.url();
+                System.out.println("Aro Offer URL: " + aroUrl);
+                aroUrl = getBaseUrl(aroUrl);
+                // }
+                return aroUrl;
+
+            } else {
+                String quoteRejectedTextVisible = page.locator(unfortunately).textContent();
+                String quoteRejectedURL = "";
+                if (quoteRejectedTextVisible.equals(
+                        "Unfortunately, we can't offer you a loan right now.  But there may be other options for you.")) {
+                    quoteRejectedURL = page.url();
+                    System.out.println("Quote Rejected URL: " + quoteRejectedURL);
+                    quoteRejectedURL = getBaseUrl(quoteRejectedURL);
+                }
+
+                return quoteRejectedURL;
+            }
+
+        }
+
+    }
+
+    public String getBaseUrl(String urlString) {
+        try {
+            URL url = new URL(urlString);
+            return url.getProtocol() + "://" + url.getHost() + url.getPath();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    // Read data from Excel sheet
+
+    
 }

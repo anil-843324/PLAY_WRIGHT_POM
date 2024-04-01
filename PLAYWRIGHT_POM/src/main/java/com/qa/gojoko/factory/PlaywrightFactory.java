@@ -58,7 +58,7 @@ public class PlaywrightFactory {
         browserContext = browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
 
         page = browserContext.newPage();
-        page.navigate(prop.getProperty("gojoko_url").trim());
+        page.navigate(prop.getProperty("mcf_url_uat").trim());
         page.waitForTimeout(4000);
 
         return new Object[] { page, browserContext };

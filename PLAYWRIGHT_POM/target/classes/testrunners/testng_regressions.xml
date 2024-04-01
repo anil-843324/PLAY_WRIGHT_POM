@@ -1,50 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Amplifi Capital Test Regression  Suite" thread-count="3" verbose="1">
+<suite name="Amplifi Capital Test Regression  Suite"  parallel="tests" thread-count="1" verbose="4"  >
+	
+	<!--  -->
+
+	<listeners>
+		<listener
+			class-name="com.qa.amplifi_capital.listeners.ExtentReportListener" />
+
+	</listeners>
+
 	<test name="AmplifiCapital Home Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.HomePageTest" />
 		</classes>
 	</test>
 
 	<test name="AmplifiCapital About Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.AboutPageTest" />
 		</classes>
 	</test>
+
 		<test name="AmplifiCapital Team Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.TeamPageTest" />
 		</classes>
 	</test>
 
 		<test name="AmplifiCapital  CreditUnions Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.CreditUnionsPageTest" />
 		</classes>
 	</test>
 
 	<test name="AmplifiCapital Investors Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.InvestorsPageTest" />
 		</classes>
 	</test>
 
 	<test name="AmplifiCapital Contact Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.ContactPageTest" />
 		</classes>
 	</test>
 
 		<test name="AmplifiCapital Careers Page Test">
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.amplifi_capital.tests.CareersPageTest" />
 		</classes>
