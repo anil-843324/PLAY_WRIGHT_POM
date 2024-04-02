@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Properties;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
@@ -42,6 +44,7 @@ public class PlaywrightFactory {
     public static BrowserContext getBrowserContext() {
         return tlBrowserContext.get();
     }
+    
 
     public Object[] initBrowser(Properties prop) {
 
@@ -49,6 +52,10 @@ public class PlaywrightFactory {
 
         System.out.println("Browser name is : " + browserName);
         Boolean headBoolean = Boolean.parseBoolean(prop.getProperty("headless"));
+        // Dimension screenSize=Toolkit.getDefaultToolkit().getScreenSize();
+        // int width = (int)screenSize.getWidth();
+        // int height = (int)screenSize.getHeight();
+        
 
         // playwright = Playwright.create();
         tlPlaywright.set(Playwright.create());
@@ -57,6 +64,7 @@ public class PlaywrightFactory {
             case "chromium":
                 // browser = playwright.chromium().launch(new
                 // BrowserType.LaunchOptions().setHeadless(headBoolean).setArgs(List.of("--start-maximized")));
+                
                 tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(headBoolean)
                         .setArgs(List.of("--start-maximized"))));
                 break;
@@ -89,6 +97,7 @@ public class PlaywrightFactory {
                 break;
         }
 
+        // tlBrowserContext.set(getBrowser().newContext());
         tlBrowserContext.set(getBrowser().newContext());
         tlPage.set(getBrowserContext().newPage());
 

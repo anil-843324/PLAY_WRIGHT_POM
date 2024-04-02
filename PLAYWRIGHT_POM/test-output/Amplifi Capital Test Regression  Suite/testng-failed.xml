@@ -10,20 +10,10 @@
         <methods>
           <include name="setup"/>
           <include name="homePageURLTest"/>
+          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.amplifi_capital.tests.HomePageTest -->
     </classes>
   </test> <!-- AmplifiCapital Home Page Test(failed) -->
-  <test thread-count="1" parallel="tests" name="AmplifiCapital  CreditUnions Test(failed)" verbose="4">
-    <classes>
-      <class name="com.qa.amplifi_capital.tests.CreditUnionsPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="creditUnionsPageContentsTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.amplifi_capital.tests.CreditUnionsPageTest -->
-    </classes>
-  </test> <!-- AmplifiCapital  CreditUnions Test(failed) -->
 </suite> <!-- Failed suite [Amplifi Capital Test Regression  Suite] -->
