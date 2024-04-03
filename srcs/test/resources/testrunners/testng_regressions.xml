@@ -8,7 +8,6 @@
 	<listeners>
 		<listener
 			class-name="com.qa.amplifi_capital.listeners.ExtentReportListener" />
-
 	</listeners>
 
 	<test name="AmplifiCapital Home Page Test">
